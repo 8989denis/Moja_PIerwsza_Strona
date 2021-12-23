@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+    
+     <head>
+    
+<meta charset="UTF-8">
+
+<meta name="description" content="Super strona denisa82">
+
+<meta name="keywords" content="denis82,denis.com,">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+         
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+         
+<title>Strona do programowania</title>
+    
+<link rel="stylesheet" href="stylforindex.css">
+         
+         
+    </head>
+    
+    <body>
+    
+    <div id="wrapper">
+    
+    <header>
+        
+    <img id="img1" src="obraz2.jpg" alt="tutaj miał być obrazek"/>
+        
+    </header>
+    
+    <nav>
+        <a href="index.html" id="menu_activ" class="menu"href="#"><b>Strona główna</b></a><a href="Aktualnosci.html"id="menu" class="menu"href="#"><b>Aktualności</b></a><a href="Kontakt.html" id="menu2" class="menu"href="#"><b>Kontakt</b></a><a href="Pomoc.html" id="menu_g" class="menu"href="#"><b>Pomoc</b></a>
+    </nav>
+    
+  <section>
+        
+      <article>
+      <h1 id="hj">Wkrótce coś sie tu pojawi i wogule</h1>
+      </article>
+      
+      
+<?php
+session_start();
+mysql_connect("localhost","admin","haslo");
+mysql_select_db("baza");
+?>
+ 
+<form method="POST" action="logowanie.php">
+<b>Login:</b> <input type="text" name="login"><br>
+<b>Hasło:</b> <input type="password" name="haslo"><br>
+<input type="submit" value="Zaloguj" name="loguj">
+</form>
+      
+      <form method="POST" action="rejestracja.php">
+<b>Login:</b> <input type="text" name="login"><br><br>
+<b>Hasło:</b> <input type="password" name="haslo1"><br>
+<b>Powtórz hasło:</b> <input type="password" name="haslo2"><br><br>
+<b>Email:</b> <input type="text" name="email"><br>
+<input type="submit" value="Utwórz konto" name="rejestruj">
+</form>
+      
+      
+        </section>
+        
+            <footer>
+        
+      <b><p id="p1">denis82.com</p></b>
+        
+    </footer>
+    
+      </div>
+      
+    </body>
+    
+</html>
